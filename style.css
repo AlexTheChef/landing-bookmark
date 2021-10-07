@@ -52,6 +52,7 @@ body {
 }
 
 .header-btns {
+    font-family: 'Rubik', sans-serif;
     height: 17px;
     width: fit-content;
     margin-left: 48px;
@@ -64,7 +65,12 @@ body {
     text-decoration: none;
 }
 
+.header-btns:hover {
+    color: var(--red)
+}
+
 .btn-header {
+    font-family: 'Rubik', sans-serif;
     width: 111px;
     height: 40px;
     background: var(--red);
@@ -79,6 +85,12 @@ body {
     border: none;
     margin-left: 44px;
     cursor: pointer;
+}
+
+.btn-header:hover {
+    background: white;
+    border: 2px solid var(--red);
+    color: var(--red);
 }
 
 .section1-container {
@@ -141,6 +153,7 @@ body {
 }
 
 .section1-blue {
+    font-family: 'Rubik', sans-serif;
     width: 166px;
     height: 48px;
     background: var(--blue);
@@ -148,18 +161,31 @@ body {
     border-radius: 5px;
     border: none;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.25px;
     cursor: pointer;
 }
 
+.section1-blue:hover {
+    border: 2px solid var(--blue);
+    background: white;
+    color: var(--blue)
+}
+
+.section1-white:hover {
+    background: white;
+    border: 2px solid #5B6074;
+    color: var(--dark);
+}
+
 .section1-white {
+    font-family: 'Rubik', sans-serif;
     width: 161px;
     height: 48px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.25px;
@@ -243,6 +269,7 @@ body {
 }
 
 .first-css {
+    font-family: 'Rubik', sans-serif;
     width: 243px;
     height: 49px;
     display: flex;
@@ -253,9 +280,15 @@ body {
     color: #242A45;
     mix-blend-mode: normal;
     opacity: 0.75;
+}
+
+.first-css:hover{
+    color: var(--red);
+    cursor: pointer;
 }
 
 .second-css {
+    font-family: 'Rubik', sans-serif;
     width: 243px;
     height: 49px;
     display: flex;
@@ -266,9 +299,15 @@ body {
     color: #242A45;
     mix-blend-mode: normal;
     opacity: 0.75;
+}
+
+.second-css:hover{
+    color: var(--red);
+    cursor: pointer;
 }
 
 .third-css {
+    font-family: 'Rubik', sans-serif;
     width: 243px;
     height: 49px;
     display: flex;
@@ -281,7 +320,12 @@ body {
     opacity: 0.75;
 }
 
-.section4-container-overflow{
+.third-css:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+.section4-container-overflow {
     height: 584px;
     width: 1440px;
     display: flex;
@@ -336,6 +380,7 @@ body {
 }
 
 .section4-button {
+    font-family: 'Rubik', sans-serif;
     width: 114px;
     height: 48px;
     background: var(--blue);
@@ -441,7 +486,7 @@ body {
     align-items: center;
 }
 
-.chrome-img{
+.chrome-img {
     width: 102px;
     height: 100px;
     background-image: url('/images/logo-chrome.svg');
@@ -451,7 +496,7 @@ body {
     background-position: center;
 }
 
-.firefox-img{
+.firefox-img {
     width: 102px;
     height: 100px;
     background-image: url('/images/logo-firefox.svg');
@@ -461,7 +506,7 @@ body {
     background-position: center;
 }
 
-.opera-img{
+.opera-img {
     width: 102px;
     height: 100px;
     background-image: url('/images/logo-opera.svg');
@@ -470,7 +515,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 .section6-h1 {
     width: 147px;
@@ -481,7 +525,7 @@ body {
     text-align: center;
     letter-spacing: 0.25px;
     color: var(--dark);
-    margin:0;
+    margin: 0;
 }
 
 .section6-p {
@@ -504,6 +548,7 @@ body {
 }
 
 .section6-button {
+    font-family: 'Rubik', sans-serif;
     width: 232px;
     height: 48px;
     background: var(--blue);
@@ -517,4 +562,359 @@ body {
     text-align: center;
     letter-spacing: 0.25px;
     color: white;
+}
+
+.section6-button:hover {
+    background: white;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.question-block .answer {
+    display: none;
+}
+
+.active .answer {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    color: var(--dark);
+    margin: 14px 0px 29px 0px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 66px;
+    background-image: url(/images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.active .arrow {
+    background-image: url(/images/icon-arrow-red.svg);
+    transform: rotate(180deg);
+    transition: all 0.1s ease-in;
+}
+
+.accordion-container {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 54px;
+}
+
+.accordion-questions {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-block {
+    width: 540px;
+    border-bottom: 1px solid #e8e8ea;
+}
+
+.question:hover h3 {
+    color: var(--red);
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.accordion__h1 {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: var(--dark);
+}
+
+.acordion-p {
+    width: 545px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--dark);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 0;
+}
+
+.question__h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #242A45;
+    color: var(--dark);
+    margin: 17px 0px;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question img {
+    align-self: center;
+    cursor: pointer;
+}
+
+.image__container {
+    position: relative;
+}
+
+.image-box {
+    position: absolute;
+    top: 210px;
+    left: -93px;
+}
+
+.section7-button {
+    font-family: 'Rubik', sans-serif;
+    width: 114px;
+    height: 48px;
+    background: var(--blue);
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 215px;
+    margin-bottom: 149px;
+}
+
+.section8-container {
+    width: 1440px;
+    height: 360px;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section8-h4 {
+    width: 277px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    margin: 58px 0px 0px 0px;
+}
+
+.section8-h1 {
+    margin: 24px 0px 36px 0px;
+    width: 423px;
+    height: 80px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: white;
+}
+
+.section8-form {
+    position: relative;
+    width: 442px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: rgba(36, 42, 69, 0.250109);
+}
+
+.button-submit {
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 126px;
+    height: 48px;
+    background: var(--red);
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-submit:hover{
+    color: var(--red);
+    background: white;
+    border: 2px solid var(--red);
+    font-weight: 600;
+}
+
+.input {
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 280px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 0px 0px 20px;
+    z-index: 100;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--dark);
+}
+
+input:focus {
+    outline: solid 1px var(--purple);
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--dark);
+}
+
+.warning {
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/icon-error.svg');
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 1000;
+}
+
+.error-container {
+    display: none;
+    width: 304px;
+    height: 72px;
+    border-radius: 5px;
+    background-color: var(--red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.error-input::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+
+.error-message {
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.25px;
+    color: white;
+    padding-left: 12px;
+    margin: 4px 0px 6px 0px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1110px;
+    height: 88px;
+    background-color: var(--dark);
+    padding: 0px 165px 0px 165px;
+    justify-content: space-between;
+}
+
+.footer-right {
+    width: 88px;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 507px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-left img {
+    margin-right: 18px;
+}
+
+.footer-links {
+    margin-left: 46px;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    color: var(--red)
+}
+
+.footer-fb {
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/icon-facebook.svg);
+}
+
+.footer-fb:hover {
+    cursor: pointer;
+    background-image: url(/images/icon-facebook-red.svg);
+}
+
+.footer-tw {
+    width: 24px;
+    height: 20px;
+    background-image: url(/images/icon-twitter.svg);
+}
+
+.footer-tw:hover {
+    cursor: pointer;
+    background-image: url(/images/icon-twitter-red.svg);
 }
