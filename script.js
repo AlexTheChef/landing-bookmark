@@ -8,6 +8,7 @@ this.addEventListener("DOMContentLoaded", () => {
         else {
             questions.forEach(question => question.parentNode.classList.remove("active"))
             question.parentNode.classList.add("active")
+            console.log(question)
         }
     }))
 })
@@ -38,3 +39,19 @@ function validation(event) {
 
     return false
 }
+
+this.addEventListener("DOMContentLoaded", () => {
+    const tab = document.querySelectorAll(".tab")
+    tab.forEach((t) => t.addEventListener("click", () => {
+
+        if (t.parentNode.classList.contains("active")) {
+            t.parentNode.classList.toggle("active")
+            
+        }
+        else {
+            tab.forEach(t => t.parentNode.classList.remove("active"))
+            t.parentNode.classList.add("active")
+            console.log(t)
+        }
+    }))
+})
