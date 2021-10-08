@@ -8,7 +8,6 @@ this.addEventListener("DOMContentLoaded", () => {
         else {
             questions.forEach(question => question.parentNode.classList.remove("active"))
             question.parentNode.classList.add("active")
-            console.log(question)
         }
     }))
 })
@@ -49,21 +48,21 @@ let tab1 = document.querySelector('.first-css')
 let tab2 = document.querySelector('.second-css')
 let tab3 = document.querySelector('.third-css')
 
-function slide1 () {
+function slide1() {
     document.querySelector(".section4-picture").style.backgroundImage = "url('/images/illustration-features-tab-1.svg')"
     document.querySelector(".section4-picture").style.backgroundPosition = "left top"
     document.querySelector(".section4-h1").innerHTML = "Bookmark in one click"
     document.querySelector(".section4-p").innerHTML = "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites."
 }
 
-function slide2 () {
+function slide2() {
     document.querySelector(".section4-picture").style.backgroundImage = "url('/images/illustration-features-tab-2.svg')"
     document.querySelector(".section4-picture").style.backgroundPosition = "center top"
     document.querySelector(".section4-h1").innerHTML = "Intelligent search"
     document.querySelector(".section4-p").innerHTML = "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks."
 }
 
-function slide3 () {
+function slide3() {
     document.querySelector(".section4-picture").style.backgroundImage = "url('/images/illustration-features-tab-3.svg')"
     document.querySelector(".section4-picture").style.backgroundPosition = "center top"
     document.querySelector(".section4-h1").innerHTML = "Share your bookmarks"
@@ -100,3 +99,23 @@ tab3.addEventListener("click", () => {
     slide3()
 })
 
+
+let burger = document.querySelector('.burger')
+let container = document.querySelector(".drop-container")
+
+burger.addEventListener("click", () => {
+    if (container.style.display !== "block") {
+        burger.classList.toggle("active")
+        document.querySelector(".burger").style.backgroundImage = "url('/images/icon-close.svg')"
+        document.querySelector(".header-img-mob").style.backgroundImage = "url('/images/logo-bookmark-white.svg')"
+        container.style.display = "block"
+        console.log('Kliknuto!')
+    }
+    else {
+        document.querySelector(".burger").style.backgroundImage = "url('/images/icon-hamburger.svg')"
+        document.querySelector(".header-img-mob").style.backgroundImage = "url('/images/logo-bookmark.svg')"
+        container.style.display = "none"
+        console.log('Iskljuceno')
+        container.classList.remove("active")
+    }
+})
